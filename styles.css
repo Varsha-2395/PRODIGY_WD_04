@@ -1,0 +1,97 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f4f4f4; /* Light background color */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #333, #555); /* Gradient background */
+    color: white;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin: 0 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-menu a:hover {
+    color: #333;
+    background-color: #fff;
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+.content {
+    padding-top: 80px; /* Adjusted for the larger navbar */
+    background: #fff; /* White background for content */
+    color: #333;
+}
+
+section {
+    padding: 100px 20px;
+    height: 100vh;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Subtle border between sections */
+    margin-bottom: 20px; /* Ensure space between sections */
+    animation: fadeIn 1s ease-out; /* Animation for sections */
+}
+
+section:nth-of-type(even) {
+    background: #f9f9f9; /* Alternating background color */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.interactive-img {
+    width: 75%;        /* Adjust the width to be larger */
+    max-width: 500px;  /* Increase the maximum width */
+    height: auto;      /* Maintain aspect ratio */
+    border: 4px solid #ddd;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for image */
+}
+
+.interactive-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.scrolled {
+    background: linear-gradient(135deg, #222, #444); /* Darker gradient on scroll */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
